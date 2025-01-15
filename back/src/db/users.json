@@ -1,0 +1,16 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$6HjasJeGs.Hrj7BTK8zwi.aFz9JI5JrPqGqBUZFhzV7T5fxOFF6bq",
+    "role": "3",
+    "id": "3682f59d-b258-49f0-bae8-4d2cb45591d6"
+  },
+  {
+    "username": "user",
+    "email": "user@gmail.com",
+    "password": "$2b$10$uC2Ca7ROCUy5rJZR35aR6uDalT5fNWDFWyeu/mlXvjs9YVhWrMlJ.",
+    "role": "1",
+    "id": "20b810fd-ad62-4ea3-84fb-44441f98df86"
+  }
+]

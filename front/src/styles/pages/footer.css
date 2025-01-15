@@ -1,0 +1,47 @@
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.25s;
+}
+
+/* Tema claro */
+.footer-light {
+    background-color: white;
+    color: black;
+}
+
+.link-light {
+    color: black;
+}
+
+/* Tema oscuro */
+.footer-dark {
+    background-color: #333;
+    color: white;
+}
+
+.link-dark {
+    color: white;
+}
+
+/* Hover para ambos temas */
+.link-light:hover,
+.link-dark:hover {
+    color: rgb(7, 47, 107);
+}
+
+footer {
+    background-color: #333;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}

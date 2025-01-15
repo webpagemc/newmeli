@@ -1,0 +1,15 @@
+/* src/styles/LoginPage.css */
+
+.login-container {
+    background-image: url("/images/Picsart_24-10-22_20-49-14-128.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+ 
+ 

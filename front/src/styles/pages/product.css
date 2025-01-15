@@ -1,0 +1,61 @@
+/* product.css */
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos superpuestos no salgan del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    gap: 10px;
+  }
+  
+  .product-container:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product-info {
+    position: static;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para destacar el texto */
+    color: white;
+    opacity: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .product-container:hover .product-info {
+    opacity: 1;
+    font-size: 1.1em; /* Efecto de tamaño interpolado */
+  }
+  
+  .product-info h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .product-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
