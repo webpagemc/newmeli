@@ -7,12 +7,14 @@ import DashboardPage from "./pages/dahsboard.jsx";
 import AdminPage from "./pages/admin.jsx";
 import ProductPage from "./pages/product.jsx";
 import About from "./pages/about.jsx";
-import UpdateProductPage from "./pages/updateProduct.jsx"
+import UpdateProductPage from "./pages/updateProduct.jsx";
+import RegisterPage from "./pages/register.jsx";
 
 // import { AuthContextProvider } from "./components/Services/AuthContex.jsx";
 import {ThemeProvider}  from "./hooks/theme.ctx.jsx"
 
 import NotFound from "./components/notFound/NotFound";
+
 
 const App = () => {
 
@@ -20,6 +22,10 @@ const App = () => {
     {
       element: <LoginPage />,
       path: "/",
+    },
+    {
+      element: <RegisterPage />,
+      path: "/register",
     },
     {
       element: <DashboardPage />,

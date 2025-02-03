@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../hooks/theme.ctx";
 import "../../styles/components/headers/dashboardHeader.css";
 import "../../styles/pages/footer.css"; 
+import env from "../../utils/enviroment";
 
 const DashboardHeader = () => {
     const { themeState, setThemeState } = useContext(ThemeContext);
@@ -10,6 +11,18 @@ const DashboardHeader = () => {
         const theme = window.localStorage.getItem("theme") ?? "light";
         setThemeState(theme);
     }, []);
+
+    useEffect(()=>{
+
+        const token = window.localStorage.getItem("jwt");
+
+        if(!token || token == "{}"){
+
+            window.location.href = env.frontUrl
+
+        }
+        
+    })
 
     const changeTheme = () => {
         const newTheme = themeState === "light" ? "dark" : "light";
