@@ -16,6 +16,36 @@ import { ThemeContext } from "../hooks/theme.ctx.jsx";
 
 const ProductPage = () => {
 
+    const addProductToCart = () => {
+
+        const cart = window.localStorage.getItem("cart");
+
+        if(!cart){
+            let newCart = [];
+            newCart.push( {...productState, quantity: 1} );
+
+            const serealizedCart = JSON.stringify(newCart);
+
+            window.localStorage.setItem("cart", serealizedCart);
+
+        }else{
+            const deserelealizedCart = JSON.parse(cart);
+
+            const productIndex = deserelealizedCart.findIndex(product => product.id == productState.id);
+            
+            if (productIndex !== -1) {
+                deserelealizedCart[productIndex] = { ...productState, quantity: deserelealizedCart[productIndex].quantity + 1 };
+            } else {
+                deserelealizedCart.push(productState);
+            }
+            
+            const serealizedCart = JSON.stringify(deserelealizedCart);
+            window.localStorage.setItem("cart", serealizedCart);
+
+        }
+        
+    }
+
     const [ productState, setProductState ] = useState(null);
 
     useEffect(()=>{
@@ -61,6 +91,7 @@ const ProductPage = () => {
                 <img src={productState.imageURL} />
                 <h3>{productState.price}</h3>
                 <p>{productState.description}</p>
+                <button onClick={addProductToCart}>Agregar Al Carrito</button>
                
             </div>
         }
