@@ -1,16 +1,1 @@
-[
-  {
-    "username": "admin",
-    "email": "admin@gmail.com",
-    "password": "$2b$10$6HjasJeGs.Hrj7BTK8zwi.aFz9JI5JrPqGqBUZFhzV7T5fxOFF6bq",
-    "role": "3",
-    "id": "3682f59d-b258-49f0-bae8-4d2cb45591d6"
-  },
-  {
-    "username": "user",
-    "email": "user@gmail.com",
-    "password": "$2b$10$uC2Ca7ROCUy5rJZR35aR6uDalT5fNWDFWyeu/mlXvjs9YVhWrMlJ.",
-    "role": "1",
-    "id": "20b810fd-ad62-4ea3-84fb-44441f98df86"
-  }
-]
+[{"username":"mau","email":"mauro@gmail.com","password":"$2b$10$GpRBaQCv.4bd.ohxMcyKDOPZmu/cxpniwremb7rJW7c0YqRrNVU/2","role":"3","id":"bf3b0b69-0e24-4d87-b786-ca7c66a87b51"},{"username":"eze","email":"eze@gmail.com","password":"$2b$10$EeGfau9UbEXev1uYZ7/v3OHL62t4IjnxX3TD/6wBVetFPY9RBUj.G","role":"1","id":"ebf900bb-3a94-4a2e-b42a-124f18228d7c"},{"username":"sebas","email":"sebas@gmail.com","password":"$2b$10$EFES.C1qjADH9NvO7/TNUeGua0JsXLwOgrNsbnLFD72SHWYcbHOq6","role":"1","id":"a61344bc-4fc9-4516-82fa-c402f901d233"}]

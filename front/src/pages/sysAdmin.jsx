@@ -8,7 +8,7 @@ import handleRole from "../utils/helpers/handleRole";
 const SysAdmin = () => {
 
     useEffect(()=>{
-        handleRole(2);
+        handleRole(3);
     },[])
     
     return(

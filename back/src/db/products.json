@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "fca1cafd-c6cf-4fac-8ca1-18a98c066418",
+    "title": "PS1",
+    "description": "Es de Sony",
+    "price": "600000",
+    "category": "Gaming",
+    "imageURL": "https://www.shutterstock.com/image-photo/london-england-07052018-original-sony-260nw-1584733528.jpg"
+  },
+  {
+    "id": "d4e60a9d-d304-4881-bf21-0ebe4eea5e21",
+    "title": "coca",
+    "description": "coca",
+    "price": "2000",
+    "category": "bebida",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg/640px-15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg"
+  }
+]

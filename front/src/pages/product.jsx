@@ -19,27 +19,42 @@ const ProductPage = () => {
     const addProductToCart = () => {
 
         const cart = window.localStorage.getItem("cart");
+        //selecciona el carrito desde el localstorage
 
+        //si el carrito no existe
         if(!cart){
+
+            //crea un array
             let newCart = [];
+
+            //le mete el nuevo producto
             newCart.push( {...productState, quantity: 1} );
 
+            //convertimos el carrito a string para que pueda ser almacenado en el localstorage
             const serealizedCart = JSON.stringify(newCart);
 
+            //guardamos el carrito dentro del localstorage
             window.localStorage.setItem("cart", serealizedCart);
 
         }else{
+
+            // tomamos el carrito hecho string y lo volvemos a la normalidad (deserealizar)
+            //convertimos el "[]" a []
             const deserelealizedCart = JSON.parse(cart);
 
             const productIndex = deserelealizedCart.findIndex(product => product.id == productState.id);
             
             if (productIndex !== -1) {
+                
                 deserelealizedCart[productIndex] = { ...productState, quantity: deserelealizedCart[productIndex].quantity + 1 };
             } else {
                 deserelealizedCart.push(productState);
             }
             
+            //convertimos el carrito a string para que pueda ser almacenado en el localstorage
             const serealizedCart = JSON.stringify(deserelealizedCart);
+
+            //guardamos el carrito dentro del localstorage
             window.localStorage.setItem("cart", serealizedCart);
 
         }

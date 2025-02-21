@@ -73,7 +73,7 @@ class CrudService {
         console.log(docIndex)
 
         data[docIndex] = {
-            id:id, 
+            ...data[docIndex], 
             ...body
         };
 

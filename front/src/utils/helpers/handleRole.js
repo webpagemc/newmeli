@@ -10,7 +10,7 @@ const handleRole = (role) => {
     console.log(decodedToken.role);
     console.log(role)
 
-    if( decodedToken.role <= role){
+    if( decodedToken.role.toString() < role.toString()){
 
         window.location.href = env.frontUrl + "/dashboard"
 

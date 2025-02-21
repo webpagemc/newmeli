@@ -15,6 +15,7 @@ import CartPage from "./pages/cart.jsx";
 import {ThemeProvider}  from "./hooks/theme.ctx.jsx"
 
 import NotFound from "./components/notFound/NotFound";
+import SysAdmin from "./pages/sysAdmin.jsx";
 
 
 
@@ -36,6 +37,10 @@ const App = () => {
     {
       element: <AdminPage />,
       path: "/admin",
+    },
+    {
+      element: <SysAdmin />,
+      path: "/sysadmin",
     },
     {
       element: <UpdateProductPage />,

@@ -17,7 +17,10 @@ const CartPage = () => {
     };
 
     const resetCart = () => {
+        //borramos la variable del localstorage
         window.localStorage.removeItem("cart");
+
+        //recargamos la pagina
         window.location.reload()
     };
 
@@ -44,9 +47,6 @@ const CartPage = () => {
 
         }
 
-
-
-
     }
 
     useEffect(()=>{
@@ -68,7 +68,6 @@ const CartPage = () => {
                     cartState.length == 0
                     ? <h3> Carrito Vacio </h3>
                     : cartState.map((element, index)=>{
-
 
                         return (
                             <div>

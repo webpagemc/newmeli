@@ -10,6 +10,8 @@ export const authControllers = {
 
             const {email, password} = req.body;
 
+            console.log(email, password)
+
             const token = await Auth.login(email, password);
 
             res.status(200).send(token);
@@ -25,9 +27,9 @@ export const authControllers = {
         try {
 
             const body = req.body;
-            const user = Auth.register(body);
+            const user = Auth.register({...body, role:"1"});
 
-            res.status(200).json({user})
+            res.status(200).json(user)
             
         } catch (error) {
             res.status(400).json(error)
